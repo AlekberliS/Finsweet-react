@@ -1,0 +1,70 @@
+/* Custom Scrollbar Styles */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #d4af37; /* Gold color to match button */
+    border-radius: 10px;
+    border: 2px solid transparent;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #b38c2a; /* Darker gold on hover */
+  }
+  
+  /* Firefox */
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #d4af37 rgba(255, 255, 255, 0.1);
+  }
+ 
+ 
+/* General swiper container styles */
+.swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* Style for individual slides */
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure the cards fill their container */
+.swiper-slide .cart {
+  width: 100%; /* Full width inside the slide */
+}
+
+/* Adjust swiper for different screen sizes */
+@media (min-width: 1024px) {
+  .swiper-slide {
+    width: 30%; /* Show 3 slides on larger screens */
+  }
+}
+
+@media (max-width: 1023px) {
+  .swiper-slide {
+    width: 48%; /* Show 2 slides on medium screens */
+  }
+}
+
+@media (max-width: 640px) {
+  .swiper-slide {
+    width: 100%; /* Show 1 slide on smaller screens */
+  }
+}
+
+/* Customize pagination (if needed) */
+.swiper-pagination-bullet {
+  background-color: #000; /* Black dots for pagination */
+}
